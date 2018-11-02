@@ -1,0 +1,4 @@
+<view class="container">
+  <canvas canvas-id="shareCanvas" style="width:480rpx;height:853rpx" bindtap="clickSave"></canvas>
+  <image src='https://ofdznzfo9.qnssl.com/rmall_share.png' mode='aspectFill' bindtap="clickShare"></image>
+</view>

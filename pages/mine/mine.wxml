@@ -1,0 +1,52 @@
+<view class="container">
+  <!-- 头部 -->
+  <view class="header">
+    <image class="header-image" src='/assets/swiper1.png'></image>
+    <text>吴彦祖</text>
+  </view>
+
+  <!-- 列表 -->
+  <view class="list">
+    <view class="list-item">
+      <view class="list-item-left">
+        <text>姓名</text>
+      </view>
+      <view class="list-item-right">
+        <text>编辑个性签名</text>
+        <image class="icon" src='/assets/icon_edit.svg'></image>
+      </view>
+    </view>
+    <view class="list-item">
+      <view class="list-item-left">
+        <text>生日</text>
+      </view>
+      <view class="list-item-right">
+        <text>点击填写</text>
+        <image class="icon icon-arrow" src='/assets/icon_arrow.svg'></image>
+      </view>
+    </view>
+    <view class="list-item">
+      <view class="list-item-left">
+        <text>身高</text>
+      </view>
+      <view class="list-item-right">
+        <text>点击填写</text>
+        <image class="icon icon-arrow" src='/assets/icon_arrow.svg'></image>
+      </view>
+    </view>
+    <view class="list-item">
+      <view class="list-item-left">
+        <text>体重</text>
+      </view>
+      <view class="list-item-right">
+        <text>点击填写</text>
+        <image class="icon icon-arrow" src='/assets/icon_arrow.svg'></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 按钮 -->
+  <view class="button">
+    <text>保存</text>
+  </view>
+</view>

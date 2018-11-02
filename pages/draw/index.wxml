@@ -1,0 +1,31 @@
+<!--page/one/index.wxml-->
+<view class="page">
+    <view class="nav">
+        <view class="nav-son {{shownavindex == 1? 'active' : ''}}" bindtap="listqy" data-nav="1">
+            <view class="content">深圳市全市</view>
+            <view class="icon"></view>
+        </view>
+        <view class="nav-son borders {{shownavindex == 2? 'active' : ''}}" bindtap="list" data-nav="2">
+            <view class="content">全部主题</view>
+            <view class="icon"></view>
+        </view>
+    </view>
+    <view class="area {{qyopen ? 'slidown' : 'slidup'}} {{qyshow ? 'disappear':''}}">
+        <view class="area-item area-left">
+            <view class="{{select1 == index ? 'current' : ''}}" wx:for="{{cityleft}}" wx:key="{{key}}" bindtap="selectleft" data-city='{{index}}' data-sel='{{select1}}'>
+                {{index}}
+            </view>
+        </view>
+        <view class="area-item area-center">
+            <view class="{{select2 == index ? 'current2' : ''}}" wx:for="{{citycenter}}" wx:key="{{key}}" bindtap="selectcenter" data-city='{{index}}'>
+                {{item}}
+            </view>
+        </view>
+    </view>
+    <view class="temp temp1 {{nzopen ? 'slidown' : 'slidup'}} {{nzshow ? 'disappear':''}}">
+        <view class="{{selectTheme == index ? 'current2':''}}" wx:for="{{content}}" wx:key="{{index}}" bindtap="selectTheme" data-theme='{{index}}'>
+            {{item}}
+        </view>
+    </view>
+    <view class="fullbg {{isfull ?'fullopacity':''}}" bindtap="hidebg"></view>
+</view>

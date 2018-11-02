@@ -1,6 +1,10 @@
 {
   "pages":[
+    "pages/shareQrcode/shareQrcode",
     "pages/index/index",
+    "pages/mine/mine",
+    "pages/swiperCard/swiperCard",
+    "pages/draw/index",
     "pages/logs/logs"
   ],
   "window":{

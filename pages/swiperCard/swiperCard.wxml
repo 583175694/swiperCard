@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+<swiper class="swiper" indicator-dots="true" current="{{current}}" autoplay="true" circular="true" bindchange="changeSwiper">
+  <block wx:for="{{images}}" wx:for-index="index">
+    <swiper-item class="{{current == index ? 'active' : ''}}">
+      <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+    </swiper-item>
+  </block>
+</swiper>
+  <text>{{current}}</text>
+</view>
