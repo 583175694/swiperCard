@@ -1,0 +1,13 @@
+<view class="container">
+  <image src='/assets/swiper1.png' mode="aspectFill"></image>
+  <view class="loginInput">
+    <text>账号</text>
+    <input value='{{username}}'></input>
+  </view>
+  <view class="loginInput">
+    <text>密码</text>
+    <input value='{{password}}'></input>
+  </view>
+  <button class='loginBtn' type='primary'>普通登录</button>
+  <button class='goResgistBtn' type="warn" open-type='getUserInfo' bindgetuserinfo='getUserInfo'>微信登录</button>
+</view>
