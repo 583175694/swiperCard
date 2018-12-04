@@ -1,17 +1,19 @@
 {
   "pages":[
-    "pages/login/login",
+    "pages/checkboxDraw/checkboxDraw",
+    "pages/areaList/areaList",
+    "pages/swiperCard/swiperCard",
     "pages/draw/index",
+    "pages/login/login",
     "pages/index/index",
     "pages/shareQrcode/shareQrcode",
     "pages/mine/mine",
-    "pages/swiperCard/swiperCard",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle":"black"
   }
 }

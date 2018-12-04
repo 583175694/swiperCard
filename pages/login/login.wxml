@@ -2,12 +2,24 @@
   <image src='/assets/swiper1.png' mode="aspectFill"></image>
   <view class="loginInput">
     <text>账号</text>
-    <input value='{{username}}'></input>
+    <input value='{{username}}' bindinput='username'></input>
   </view>
   <view class="loginInput">
     <text>密码</text>
-    <input value='{{password}}'></input>
+    <input value='{{password}}' bindinput='password'></input>
   </view>
-  <button class='loginBtn' type='primary'>普通登录</button>
-  <button class='goResgistBtn' type="warn" open-type='getUserInfo' bindgetuserinfo='getUserInfo'>微信登录</button>
+  <view class="loginInput">
+    <text>生日</text>
+    <input value='{{birthday}}' bindinput='birthday'></input>
+  </view>
+  <view class="loginInput">
+    <text>身份证</text>
+    <input value='{{idCard}}' bindinput='idCard'></input>
+  </view>
+  <view class="loginInput">
+    <text>手机号</text>
+    <input value='{{phone}}' bindinput='phone'></input>
+  </view>
+  <button class='loginBtn' type='primary' bindtap='getUserInfo'>获取用户信息</button>
+  <button class='goResgistBtn' type="warn" bindtap='loginBtn'>登录</button>
 </view>

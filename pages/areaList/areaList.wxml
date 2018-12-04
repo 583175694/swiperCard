@@ -1,0 +1,46 @@
+<view class="container">
+  <picker bindchange="bindPickerChange" value="{{item}}" range="{{pickArea}}" range-key="areaId">
+    <view class="picker">
+      当前选择：{{pickArea[index].areaName}}
+    </view>
+  </picker>
+  
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">ID</view>
+      <view class="th">区域名</view>
+      <view class="th">优先级</view>
+      <view class="th">操作</view>
+    </view>
+    <block wx:for="{{listData}}" wx:key="{{areaId}}">
+      <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+        <view class="td">{{item.areaId}}</view>
+        <view class="td">{{item.areaName}}</view>
+        <view class="td">{{item.priority}}</view>
+        <view class="td"><text>编辑</text> | <text bindtap="deleteArea" data-areaId="{{item.areaId}}">删除</text></view>
+      </view>
+      <view class="tr" wx:else>
+        <view class="td">{{item.areaId}}</view>
+        <view class="td">{{item.areaName}}</view>
+        <view class="td">{{item.priority}}</view>
+        <view class="td"><text>编辑</text> | <text bindtap="deleteArea" data-areaId="{{item.areaId}}">删除</text></view>
+      </view>
+    </block>
+  </view>
+
+  <button type="primary" bindtap="toAddArea">添加区域信息</button>
+
+  <view class="Layer" bindtap="toAddArea" wx:if="{{layer}}"></view>
+
+  <view class="addAreaCard" wx:if="{{layer}}">
+    <view class="list">
+      <text>区域名:</text>
+      <input type="text" value="{{areaName}}" bindinput="areaNameInput" />
+    </view>
+    <view class="list">
+      <text>优先级:</text>
+      <input type="text" value="{{priority}}" bindinput="areaPriority" />
+    </view>
+    <button type="primary" bindtap="addArea">添加</button>
+  </view>
+</view>

@@ -1,0 +1,18 @@
+<view class="checkbox {{ show ? 'show' : 'hide' }}">
+  <view class="title">
+    <text>优惠券</text>
+  </view>
+  <view class="content">
+    <label class='checkboxItem' wx:for="{{coupons}}" wx:key="{{index}}">
+      <text>{{item.value}}</text>
+      <Checkbox class='checkboxCoupons' value="{{item.value}}" checked="{{item.checked}}"></Checkbox>
+    </label>
+  </view>
+  <view class="confirm" bindtap='hideDraw'>
+    <text>确定</text>
+  </view>
+</view>
+
+<view class="layer {{show==true ? 'showLayer' : 'hideLayer'}}" bindtap='hideDraw'></view>
+
+<view class='display' bindtap='showDraw'>显示</view>
