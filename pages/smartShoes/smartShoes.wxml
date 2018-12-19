@@ -4,17 +4,17 @@
   </view>
   <image class="shoes-background" src="../../assets/shoes.png" mode="aspectFill" />
   <view class="model">
-    <view class="model-item active">
-      <image src="../../assets/sun-1.png" mode="aspectFill" />
+    <view class="model-item {{current == index ? 'active' : ''}}" wx:for="{{stateList}}" bindtap="switchState" data-index="{{index}}">
+      <image src="{{item.imgActive}}" mode="aspectFill" wx:if="{{current == index}}" />
+      <image src="{{item.img}}" mode="aspectFill" wx:else />
     </view>
-    <view class="model-item">
-      <image src="../../assets/snow.png" mode="aspectFill" />    
-    </view>
-    <view class="model-item">
-      <image src="../../assets/drop.png" mode="aspectFill" />
-    </view>
-    <view class="model-item">
-      <image src="../../assets/wind.png" mode="aspectFill" />
+  </view>
+  <view class="section section_gap">
+    <text class="section__title">{{celsius}}°</text>
+    <view class="body-view">
+      <text>-</text>
+      <slider bindchanging="sliderchange" min="0" max="60" backgroundColor="#d4e5f5" activeColor="#70acf5" />
+      <text>+</text>
     </view>
   </view>
 </view>

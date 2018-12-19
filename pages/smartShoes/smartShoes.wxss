@@ -3,9 +3,14 @@ page {
 }
 
 .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
 }
 
 .top-state {
@@ -75,4 +80,33 @@ page {
   content: '';
   z-index: -1;
   border-radius: 50%;
+}
+
+.section_gap {
+  width: 700rpx;
+  text-align: center;
+  margin-top: 100rpx;
+}
+
+.body-view {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+
+.body-view text {
+  color: #70acf5;
+  font-size: 68rpx;
+}
+
+slider {
+  width: 100%;
+}
+
+.section__title {
+  font-size: 120rpx;
+  font-weight: 400;
+  color: #73acf1;
 }

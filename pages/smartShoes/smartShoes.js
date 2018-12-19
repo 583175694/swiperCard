@@ -5,62 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    stateList: [{
+      img: '../../assets/sun.png',
+      imgActive: '../../assets/sun-1.png',
+    }, {
+      img: '../../assets/snow.png',
+      imgActive: '../../assets/snow-1.png'
+    }, {
+      img: '../../assets/drop.png',
+      imgActive: '../../assets/drop-1.png',
+    }, {
+      img: '../../assets/wind.png',
+      imgActive: '../../assets/wind-1.png'
+    }],
+    current: 0,
+    celsius: 26
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  switchState(e) {
+    this.setData({
+      current: e.currentTarget.dataset.index
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  sliderchange(e) {
+    this.setData({
+      celsius: e.detail.value
+    })
   }
 })
