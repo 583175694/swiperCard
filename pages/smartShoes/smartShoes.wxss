@@ -1,0 +1,78 @@
+page {
+  background-color: #f9faff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-state {
+  width: 100%;
+  height: 100rpx;
+  background-color: #f9faff;
+  text-align: center;
+}
+
+.top-state>text {
+  color: #dfe3ef;
+  font-size: 48rpx;
+  line-height: 100rpx;
+}
+
+.shoes-background {
+  width: 100%;
+  height: 450rpx;
+}
+
+.model {
+  width: 86%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60rpx;
+}
+
+.model-item image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.model-item {
+  position: relative;
+  width: 120rpx;
+  height: 120rpx;
+  border: 6rpx solid #e5e5e5;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  position: relative;
+  width: 120rpx;
+  height: 120rpx;
+  border: 6rpx solid transparent;
+  border-radius: 50%;
+  background: #fff;
+  background-clip: padding-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active::after {
+  position: absolute;
+  top: -6rpx;
+  bottom: -6rpx;
+  left: -6rpx;
+  right: -6rpx;
+  background: linear-gradient(to right, #8eb6f4, #d2aaff);
+  content: '';
+  z-index: -1;
+  border-radius: 50%;
+}
