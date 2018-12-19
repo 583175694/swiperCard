@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/checkboxCard/checkboxCard",
     "pages/checkboxDraw/checkboxDraw",
     "pages/areaList/areaList",
     "pages/swiperCard/swiperCard",
@@ -7,7 +8,6 @@
     "pages/login/login",
     "pages/index/index",
     "pages/shareQrcode/shareQrcode",
-    "pages/mine/mine",
     "pages/logs/logs"
   ],
   "window":{

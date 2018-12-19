@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="card {{item.check === true ? 'active': ''}}" wx:for="{{list}}" wx:key="{{index}}" bindtap="checkCoach" data-check='{{index}}'>
+    <image class="avatar" src='{{item.avatar}}'></image>
+    <text>{{item.name}}</text>
+  </view>
+</view>

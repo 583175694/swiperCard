@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 40rpx;
+}
+
+.card {
+  width: 326rpx;
+  height: 178rpx;
+  background:rgba(240,240,240,1);
+  border-radius: 4rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20rpx;
+  transform: scale(1);
+  transition: all .1s ease-in-out;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-left: 46rpx;
+  margin-right: 30rpx;
+}
+
+.card>text {
+  font-size: 28rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.card:active {
+  transform: scale(.95);
+  transition: all .15s ease-in-out;
+}
+
+.active {
+  background:rgba(136,167,255,1);
+}
+
+.active>text {
+  color: #fff;
+}
