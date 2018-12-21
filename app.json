@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/weather/weather",
+    "pages/loading/loading",
     "pages/smartShoes/smartShoes",
     "pages/checkboxCard/checkboxCard",
     "pages/checkboxDraw/checkboxDraw",

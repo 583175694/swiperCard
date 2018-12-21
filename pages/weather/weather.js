@@ -285,5 +285,10 @@ Page({
       path: shareInfo.path || '/pages/index/index',
       imageUrl: shareInfo.imageUrl,
     }
+  },
+  hrefSmartShoes() {
+    wx.navigateTo({
+      url: '../smartShoes/smartShoes'
+    })
   }
 })

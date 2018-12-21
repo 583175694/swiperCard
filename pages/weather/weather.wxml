@@ -23,6 +23,11 @@
         <text>能见度 {{cityDatas.now.vis}}</text>
       </view>
     </view>
+    <view class="bluetooth">
+      <text class="prompt">请先连接蓝牙哦~</text>
+      <image class="arrow" src="/assets/arrow.png" mode="aspectFit" />
+      <image class="button" src="/assets/button.png" mode="aspectFill" bindtap="hrefSmartShoes" />
+    </view>
     <view class='guide' wx:if='{{cityDatas.daily_forecast}}'>
       <view class='title'>未来 3 天预报</view>
       <view class='guides'>
