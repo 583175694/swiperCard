@@ -13,7 +13,7 @@
     <text class="section__title">{{celsius}}°</text>
     <view class="body-view">
       <text>-</text>
-      <slider bindchanging="sliderchange" min="0" max="60" backgroundColor="#d4e5f5" activeColor="#70acf5" />
+      <slider bindchanging="sliderchange" min="30" max="50" backgroundColor="#d4e5f5" activeColor="#70acf5" />
       <text>+</text>
     </view>
   </view>

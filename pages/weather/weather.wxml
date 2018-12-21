@@ -1,0 +1,41 @@
+<view class="container {{isIPhoneX ? 'iphonex-padding' : ''}}" catchtap='menuHide'>
+  <view class='bcg' wx:if='{{!bcgImg}}' style='background: {{bcgColor}}'></view>
+  <image class='bcg' wx:if='{{bcgImg}}' src='{{bcgImg}}' mode='aspectFill'></image>
+  <view class='content' wx:if='{{!bcgImgAreaShow}}'>
+    <view class='avatarInfo' catchtap='showBcgImgArea'>
+      <open-data class='avatar' type='userAvatarUrl'></open-data>
+      <open-data class='name' type='userNickName'></open-data>
+      <image class='downArrow' src='/img/down.png'></image>
+    </view>
+    <view class='info'>
+      <view class='city'>
+        <view class='name'>
+          <image wx:if='{{located}}' class='icon' src='/img/location_s_w.png'></image>
+          <view class='val'>{{cityDatas.basic.location || '定位中'}}</view>
+          <image class='down' src='/img/down.png'></image>
+        </view>
+        <text class='time' wx:if='{{cityDatas.updateTimeFormat}}'>{{cityDatas.updateTimeFormat}} 更新</text>
+      </view>
+      <view class='message'>{{message}}</view>
+      <view class='temp num' decode='true'>{{cityDatas.now.tmp || '-'}}<text style='font-size:50rpx;position:relative;top:-20px;'>℃</text></view>
+      <view class='weather'>{{cityDatas.now.cond_txt || '--'}}</view>
+      <view class='pm'>
+        <text>能见度 {{cityDatas.now.vis}}</text>
+      </view>
+    </view>
+    <view class='guide' wx:if='{{cityDatas.daily_forecast}}'>
+      <view class='title'>未来 3 天预报</view>
+      <view class='guides'>
+        <view class='item' wx:for='{{cityDatas.daily_forecast}}' wx:key='{{index}}'>
+          <view class='date i'>{{item.date}}</view>
+          <view class='temperature i'>{{item.tmp_max}}~{{item.tmp_min}}℃</view>
+          <view class='weather i'>
+            <text>{{item.cond_txt_d}}</text>
+            <image mode='widthFix' src='{{weatherIconUrl}}{{item.cond_code_d}}.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='footer'>开发者 · Hey ` w</view>
+  </view>
+</view>

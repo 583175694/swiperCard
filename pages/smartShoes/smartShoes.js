@@ -19,7 +19,7 @@ Page({
       imgActive: '../../assets/wind-1.png'
     }],
     current: 0,
-    celsius: 26
+    celsius: 30
   },
 
   switchState(e) {
