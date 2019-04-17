@@ -1,16 +1,17 @@
 {
   "pages":[
+    "pages/swiperCard2/swiperCard2",
+    "pages/swiperCard/swiperCard",
+    "pages/shareQrcode/shareQrcode",
+    "pages/checkboxDraw/checkboxDraw",
+    "pages/checkboxCard/checkboxCard",
     "pages/weather/weather",
     "pages/loading/loading",
     "pages/smartShoes/smartShoes",
-    "pages/checkboxCard/checkboxCard",
-    "pages/checkboxDraw/checkboxDraw",
     "pages/areaList/areaList",
-    "pages/swiperCard/swiperCard",
     "pages/draw/index",
     "pages/login/login",
     "pages/index/index",
-    "pages/shareQrcode/shareQrcode",
     "pages/logs/logs"
   ],
   "window":{

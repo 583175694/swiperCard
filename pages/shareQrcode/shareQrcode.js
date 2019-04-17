@@ -11,10 +11,10 @@ Page({
     // const wxGetImageInfo = promisify(wx.getImageInfo)
 
     wx.getImageInfo({
-      src: 'https://ofdznzfo9.qnssl.com/rmall_share.png',
+      src: 'https://euler-1255704943.cos.ap-guangzhou.myqcloud.com/server/materials-2.jpg',
       success: function(res) {
         wx.getImageInfo({
-          src: 'https://ofdznzfo9.qnssl.com/rmall_qrcode.jpg',
+          src: 'https://euler-1255704943.cos.ap-guangzhou.myqcloud.com/server/materials-3.jpg',
           success: function(res2) {
             const ctx = wx.createCanvasContext('shareCanvas')
 
